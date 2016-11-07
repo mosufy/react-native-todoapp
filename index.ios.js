@@ -11,7 +11,7 @@
 import React, {Component} from 'react';
 import {AppRegistry} from 'react-native';
 import {Router} from 'react-native-router-flux';
-import {scenes} from './src/scenes';
+import {scenes} from './app/scenes';
 
 class App extends Component {
   render() {

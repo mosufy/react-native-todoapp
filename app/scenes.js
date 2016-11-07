@@ -15,6 +15,6 @@ import HomeContainer from './containers/HomeContainer';
 
 export const scenes = Actions.create(
   <Scene key="root">
-    <Scene key="home" component={HomeContainer} initial={true}/>
+    <Scene key="home" component={HomeContainer} title="Hello World" initial={true}/>
   </Scene>
 );
