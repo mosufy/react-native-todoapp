@@ -36,13 +36,13 @@ ToDo Demo App built with React Native.
 
 ## How to start a new React Native project
    
-   ```bash
-   # Init React Native project
-   react-native init MyTodoApp
-     
-   # Start the app
-   react-native start
-   ```
+```bash
+# Init React Native project
+react-native init MyTodoApp
+  
+# Start the app
+react-native start
+```
 
 ## References
 

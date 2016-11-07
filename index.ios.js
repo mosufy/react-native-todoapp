@@ -1,53 +1,24 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * iOS React Native App
+ *
+ * @date 03/11/2016
+ * @author Mosufy <mosufy@gmail.com>
+ * @copyright Copyright (c) Mosufy
  */
 
-import React, {Component} from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+'use strict';
 
-export default class TodoApp extends Component {
+import React, {Component} from 'react';
+import {AppRegistry} from 'react-native';
+import {Router} from 'react-native-router-flux';
+import {scenes} from './src/scenes';
+
+class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
+      <Router scenes={scenes}/>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('TodoApp', () => TodoApp);
+AppRegistry.registerComponent('TodoApp', () => App);
